@@ -1,6 +1,15 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <%@ page import="com.connection.DBConnection" %>
 <%@ page import="java.sql.SQLException" %>
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="com.model.entity.User" %>
+<%
+    User auth = (User) request.getSession().getAttribute("auth");
+    if(auth!=null){
+        request.setAttribute("auth",auth);
+    }
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,11 +23,11 @@
 
 <%--<% out.print(DBConnection.getConnection()); %>--%>
 <% try {
-    out.print(DBConnection.getConnection().toString());
+    response.getWriter().print(DBConnection.getConnection().toString());
 } catch (ClassNotFoundException e) {
-    out.print(e.toString());
+    response.getWriter().print(e.toString());
 } catch (SQLException e) {
-    out.print(e.toString());
+    response.getWriter().print(e.toString());
 } %>
 
 <%@ include file="footer.jsp"%>

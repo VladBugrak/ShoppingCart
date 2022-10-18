@@ -1,4 +1,5 @@
 <%--taken from https://getbootstrap.com/docs/4.0/components/navbar/--%>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container"></div>
   <a class="navbar-brand" href="index.jsp">E-Commerce Shopping Cart</a>
@@ -6,6 +7,8 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <%--        <ul class="navbar-nav mr-auto">--%><%--sets menu to the right--%>
@@ -18,17 +21,24 @@
       <li class="nav-item">
         <a class="nav-link" href="cart.jsp">Cart</a>
       </li>
+
+      <%
+        if(auth != null){ %>
       <li class="nav-item">
         <a class="nav-link disabled" href="orders.jsp">Orders</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="orders.jsp">Logout</a>
+        <a class="nav-link disabled" href="log-out">Logout</a>
       </li>
+      <% } else { %>
       <li class="nav-item">
         <a class="nav-link disabled" href="login.jsp">Login</a>
       </li>
+      <%}%>
+
+
     </ul>
   </div>
-  </div>
+<%--  </div>--%>
 
 </nav>

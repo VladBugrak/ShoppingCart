@@ -9,14 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="до видалення ShoppingCart_war_exploded.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/UserLogin.java" afterDir="false" />
+    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 4. E-Commerce Shopping Cart Project User Logout in JSP Servlet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/LogOutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connection/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connection/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/LoginServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/orders.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,8 @@
     "last_opened_file_path": "C:/Users/VlaDan/IdeaProjects/ShoppingCart/src/main/webapp/includes",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2505747"
+    "project.structure.side.proportion": "0.2505747",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -198,7 +200,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665987293381</updated>
       <workItem from="1665987294531" duration="39183000" />
-      <workItem from="1666081108518" duration="23862000" />
+      <workItem from="1666081108518" duration="29426000" />
     </task>
     <task id="LOCAL-00001" summary="до видалення ShoppingCart_war_exploded.xml">
       <created>1666091437649</created>
@@ -207,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666091437649</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="the beginning of 4. E-Commerce Shopping Cart Project User Logout in JSP Servlet">
+      <created>1666119742835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666119742835</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +235,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="до видалення ShoppingCart_war_exploded.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="до видалення ShoppingCart_war_exploded.xml" />
+    <MESSAGE value="the beginning of 4. E-Commerce Shopping Cart Project User Logout in JSP Servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 4. E-Commerce Shopping Cart Project User Logout in JSP Servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

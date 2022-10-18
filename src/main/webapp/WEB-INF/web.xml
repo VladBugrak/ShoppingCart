@@ -13,6 +13,15 @@
         <url-pattern>/user-login</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>log-out</servlet-name>
+        <servlet-class>com.servlet.LogOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>log-out</servlet-name>
+        <url-pattern>/log-out</url-pattern>
+    </servlet-mapping>
+
 
 
 
