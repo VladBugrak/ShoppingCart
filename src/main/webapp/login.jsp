@@ -16,8 +16,8 @@
     <div class="card w-50 mx-auto my-5">
         <div class="card-header text-center">User Login</div>
         <div class="card-body">
-<%--            <form action="user-login" method="post">--%>
-                <form action="${pageContext.request.contextPath}/user-login" method="post">
+            <form action="user-login" method="post">
+<%--                <form action="${pageContext.request.contextPath}/user-login" method="post">--%>
 
                 <div class="form-group">
                     <label>Email Address</label>
