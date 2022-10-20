@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 6.(latest version E-Commerce Shopping Cart Page Design Using HTML, CSS, Bootstrap in JSP Servlet">
+    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 6.https://youtu.be/6O-AnDQSvyA?list=PLF7Fmglq6SPD9jVwDt-mbYiaewF-pPYZS&amp;t=397">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +197,7 @@
       <workItem from="1665987294531" duration="39183000" />
       <workItem from="1666081108518" duration="30476000" />
       <workItem from="1666190930720" duration="14949000" />
-      <workItem from="1666252596956" duration="2164000" />
+      <workItem from="1666252596956" duration="5280000" />
     </task>
     <task id="LOCAL-00001" summary="до видалення ShoppingCart_war_exploded.xml">
       <created>1666091437649</created>
@@ -226,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666253287105</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="the beginning of 6.https://youtu.be/6O-AnDQSvyA?list=PLF7Fmglq6SPD9jVwDt-mbYiaewF-pPYZS&amp;t=397">
+      <created>1666254920999</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666254920999</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +256,8 @@
     <MESSAGE value="the beginning of 4. E-Commerce Shopping Cart Project User Logout in JSP Servlet" />
     <MESSAGE value="the beginning of 5. E-Commerce Shopping Cart Project Show All Product in Home Page Using JSP Servlet and MySQL" />
     <MESSAGE value="the beginning of 6.(latest version E-Commerce Shopping Cart Page Design Using HTML, CSS, Bootstrap in JSP Servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 6.(latest version E-Commerce Shopping Cart Page Design Using HTML, CSS, Bootstrap in JSP Servlet" />
+    <MESSAGE value="the beginning of 6.https://youtu.be/6O-AnDQSvyA?list=PLF7Fmglq6SPD9jVwDt-mbYiaewF-pPYZS&amp;t=397" />
+    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 6.https://youtu.be/6O-AnDQSvyA?list=PLF7Fmglq6SPD9jVwDt-mbYiaewF-pPYZS&amp;t=397" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

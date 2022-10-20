@@ -13,6 +13,18 @@
 <head>
     <title>Cart Page</title>
     <%@ include file="head.jsp" %>
+    <style type="text/css">
+        .table tbody td{
+            vertical-align: middle;
+        }
+        .btn-incre,
+        .btn-decre{
+            box-shadow: none;
+            font-size:25px;
+
+        }
+
+    </style>
 </head>
 <body>
 
@@ -31,8 +43,6 @@
                     <th scope="col">Price</th>
                     <th scope="col">Buy Now</th>
                     <th scope="col">Cancel</th>
-
-
                 </tr>
 
             </thead>
@@ -43,16 +53,26 @@
                 <td>45$</td>
                 <td>
                     <form action="" method="post" class="form-inline">
-                        <input type=="hidden" name="id" value="1" class="form-input">
+                        <input type="hidden" name="id" value="1" class="form-input">
                         <div class="form-group d-flex justify-content-between">
-                            <a class="btn btn-sm btn-incre">
+
+                            <a class="btn btn-sm btn-decre" href="">
+                                <i class="fas fa-minus-square"></i>
+                            </a>
+                            <input type="text" name="quantity" class="form-control" value="1" readonly>
+                            <a class="btn btn-sm btn-incre" href="">
                                 <i class="fas fa-plus-square"></i>
                             </a>
+
                         </div>
 
                     </form>
 
                 </td>
+                <td>
+                    <a  class="btn btn-sm btn-danger" href="">Remove</a>
+                </td>
+
 
             </tr>
 
