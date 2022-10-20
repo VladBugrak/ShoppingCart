@@ -1,11 +1,26 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="com.model.entity.User" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="com.model.entity.Cart" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.model.dao.ProductDao" %>
+<%@ page import="com.connection.DBConnection" %>
 
 <%
     User auth = (User) request.getSession().getAttribute("auth");
     if(auth!=null){
         request.setAttribute("auth",auth);
     }
+
+    ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
+    List<Cart> cartProduct = null;
+    if(cart_list != null){
+        ProductDao productDao = new ProductDao(DBConnection.getConnection());
+        cartProduct = productDao.getCartProducts(cart_list);
+        request.setAttribute("cart_list", cart_list);
+
+    }
+
 %>
 
 <!DOCTYPE html>
@@ -33,7 +48,7 @@
 <div class="container">
     <div class="d-flex py-3">
         <h3>Total Price: $452</h3>
-        <a class="mx-3 btn-primary" href="#">Check OutS</a>
+        <a class="mx-3 btn-primary" href="#"> Check OutS </a>
     </div>
         <table class="table table-loght">
             <thead>
@@ -47,15 +62,18 @@
 
             </thead>
             <tbody>
+            <%
+                if(cart_list != null){
+                    for(Cart c:cartProduct){
+                        %>
             <tr>
-                <td>Women Shoes</td>
-                <td>Shoes</td>
-                <td>45$</td>
+                <td><%= c.getName()%></td>
+                <td><%= c.getCategory()%></td>
+                <td><%= c.getPrice()%>$</td>
                 <td>
                     <form action="" method="post" class="form-inline">
-                        <input type="hidden" name="id" value="1" class="form-input">
+                        <input type="hidden" name="id" value="<%= c.getId()%>" class="form-input">
                         <div class="form-group d-flex justify-content-between">
-
                             <a class="btn btn-sm btn-decre" href="">
                                 <i class="fas fa-minus-square"></i>
                             </a>
@@ -63,18 +81,18 @@
                             <a class="btn btn-sm btn-incre" href="">
                                 <i class="fas fa-plus-square"></i>
                             </a>
-
                         </div>
-
                     </form>
-
                 </td>
                 <td>
                     <a  class="btn btn-sm btn-danger" href="">Remove</a>
                 </td>
-
-
             </tr>
+                        <%
+                    }
+                }
+            %>
+
 
             </tbody>
         </table>

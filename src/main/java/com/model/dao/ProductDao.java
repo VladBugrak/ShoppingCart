@@ -1,5 +1,6 @@
 package com.model.dao;
 
+import com.model.entity.Cart;
 import com.model.entity.Product;
 
 
@@ -33,7 +34,7 @@ public class ProductDao {
                         resultSet.getInt("id"),
                         resultSet.getString("name"),
                         resultSet.getString("category"),
-                        resultSet.getString("price"),
+                        resultSet.getDouble("price") ,
                         resultSet.getString("image")
                 );
                 productList.add(product);
@@ -46,4 +47,38 @@ public class ProductDao {
         }
         return productList;
     }
+
+
+    public List<Cart> getCartProducts(ArrayList<Cart> cartList){
+        List<Cart> cartList1 = new ArrayList<Cart>();
+
+        try{
+            if(cartList.size() > 0){
+                for(Cart item:cartList){
+                   query = "select * from products where id=?";
+                   preparedStatement = connection.prepareStatement(query);
+                   preparedStatement.setInt(1,item.getId());
+                   resultSet = preparedStatement.executeQuery();
+                    while (resultSet.next()){
+                        Cart cart = new Cart(
+                                resultSet.getInt("id"),
+                                resultSet.getString("name"),
+                                resultSet.getString("category"),
+                                resultSet.getDouble("price") * item.getQuantity(),
+                                resultSet.getString("image"),
+                                item.getQuantity()
+                        );
+                        cartList1.add(cart);
+                    }
+                }
+            }
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        return cartList1;
+    }
+
+
+
 }
