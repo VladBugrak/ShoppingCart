@@ -7,6 +7,8 @@
 <%@ page import="com.model.entity.Product" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.io.PrintWriter" %>
+<%@ page import="com.model.entity.Cart" %>
+<%@ page import="java.util.ArrayList" %>
 <%
     User auth = (User) request.getSession().getAttribute("auth");
     if(auth!=null){
@@ -15,7 +17,11 @@
 
     ProductDao productDao = new ProductDao(DBConnection.getConnection());
     List<Product> productList = productDao.getAllProducts();
-    PrintWriter printWriter = response.getWriter();
+
+    ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
+    if(cart_list != null){
+        request.setAttribute("cart_list", cart_list);
+    }
 %>
 
 <!DOCTYPE html>
@@ -55,7 +61,7 @@
                     <h6 class="price">Price: $<%= product.getPrice()%></h6>
                     <h6 class="category"> Category: <%= product.getCategory()%></h6>
                     <div class="mt-3 d-flex justify-content-between">
-                        <a href="add-to-cart?id=<%= product.getId()%>" class="btn btn-dark">Add to Cart</a>
+                        <a href="add-to-cart?id=<%= product.getId() %>" class="btn btn-dark">Add to Cart</a>
                         <a href="#" class="btn btn-primary">Buy Now</a>
                     </div>
                 </div>

@@ -31,6 +31,15 @@
         <url-pattern>/add-to-cart</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>quantity-inc-dec</servlet-name>
+        <servlet-class>com.servlet.QuantityIncDecServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>quantity-inc-dec</servlet-name>
+        <url-pattern>/quantity-inc-dec</url-pattern>
+    </servlet-mapping>
+
 
 
 

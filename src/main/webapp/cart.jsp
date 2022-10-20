@@ -17,8 +17,8 @@
     if(cart_list != null){
         ProductDao productDao = new ProductDao(DBConnection.getConnection());
         cartProduct = productDao.getCartProducts(cart_list);
-        request.setAttribute("cart_list", cart_list);
-
+        double total = productDao.getTotalCartPrice(cart_list);
+        request.setAttribute("total", total);
     }
 
 %>
@@ -47,7 +47,9 @@
 
 <div class="container">
     <div class="d-flex py-3">
-        <h3>Total Price: $452</h3>
+        <h3>Total Price: $ ${(total > 0)?total:0}</h3>
+
+
         <a class="mx-3 btn-primary" href="#"> Check OutS </a>
     </div>
         <table class="table table-loght">
@@ -74,11 +76,11 @@
                     <form action="" method="post" class="form-inline">
                         <input type="hidden" name="id" value="<%= c.getId()%>" class="form-input">
                         <div class="form-group d-flex justify-content-between">
-                            <a class="btn btn-sm btn-decre" href="">
+                            <a class="btn btn-sm btn-decre" href="quantity-inc-dec">
                                 <i class="fas fa-minus-square"></i>
                             </a>
                             <input type="text" name="quantity" class="form-control" value="1" readonly>
-                            <a class="btn btn-sm btn-incre" href="">
+                            <a class="btn btn-sm btn-incre" href="quantity-inc-dec">
                                 <i class="fas fa-plus-square"></i>
                             </a>
                         </div>

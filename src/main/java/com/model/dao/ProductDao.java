@@ -79,6 +79,31 @@ public class ProductDao {
         return cartList1;
     }
 
+    public double getTotalCartPrice(ArrayList<Cart> cartList){
+        if(cartList == null || cartList.isEmpty())
+            return 0;
+
+        double sum = 0;
+        try {
+            for(Cart item: cartList) {
+                query = "select price from products where id= ?";
+                preparedStatement = connection.prepareStatement(query);
+                preparedStatement.setInt(1,item.getId());
+                resultSet = preparedStatement.executeQuery();
+                while (resultSet.next()){
+                    sum += resultSet.getDouble("price") * item.getQuantity();
+                }
+            }
+        } catch (Exception e){
+                System.out.println(e.getMessage());
+                e.printStackTrace();
+        }
+
+        return sum;
+    }
+
+
+
 
 
 }

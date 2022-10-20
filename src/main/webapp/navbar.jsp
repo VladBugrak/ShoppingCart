@@ -1,8 +1,9 @@
 <%--taken from https://getbootstrap.com/docs/4.0/components/navbar/--%>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container"></div>
+  <div class="container">
   <a class="navbar-brand" href="index.jsp">E-Commerce Shopping Cart</a>
+  </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,7 +20,9 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="cart.jsp">Cart</a>
+        <a class="nav-link" href="cart.jsp">Cart
+          <span class="badge badge-danger px-1">${ cart_list.size()}</span>
+        </a>
       </li>
 
       <%
