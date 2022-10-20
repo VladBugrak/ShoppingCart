@@ -9,16 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 9. E-Commerce Shopping Cart Calculate Total Price and Item on Cart in JSP and Servlet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/QuantityIncDecServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 10. E-Commerce Shopping Cart Increase and Decrease Cart Product Quantity in JSP and Servlet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/model/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/QuantityIncDecServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/QuantityIncDecServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/navbar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +197,7 @@
       <workItem from="1665987294531" duration="39183000" />
       <workItem from="1666081108518" duration="30476000" />
       <workItem from="1666190930720" duration="14949000" />
-      <workItem from="1666252596956" duration="23862000" />
+      <workItem from="1666252596956" duration="28061000" />
     </task>
     <task id="LOCAL-00001" summary="до видалення ShoppingCart_war_exploded.xml">
       <created>1666091437649</created>
@@ -261,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666277938303</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="the beginning of 10. E-Commerce Shopping Cart Increase and Decrease Cart Product Quantity in JSP and Servlet">
+      <created>1666294807674</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666294807674</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +288,8 @@
     <MESSAGE value="the beginning of 7. E-Commerce shopping cart how to add product in the cart using jsp servlet" />
     <MESSAGE value="the beginning of 8. E-Commerce Shopping Cart Show All Cart Products Inside Cart Page in JSP and Servlet" />
     <MESSAGE value="the beginning of 9. E-Commerce Shopping Cart Calculate Total Price and Item on Cart in JSP and Servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 9. E-Commerce Shopping Cart Calculate Total Price and Item on Cart in JSP and Servlet" />
+    <MESSAGE value="the beginning of 10. E-Commerce Shopping Cart Increase and Decrease Cart Product Quantity in JSP and Servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 10. E-Commerce Shopping Cart Increase and Decrease Cart Product Quantity in JSP and Servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
