@@ -22,6 +22,17 @@
         <url-pattern>/log-out</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>add-to-cart</servlet-name>
+        <servlet-class>com.servlet.AddToCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add-to-cart</servlet-name>
+        <url-pattern>/add-to-cart</url-pattern>
+    </servlet-mapping>
+
+
+
 
 
 
