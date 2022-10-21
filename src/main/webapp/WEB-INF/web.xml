@@ -41,6 +41,16 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>remove-from-cart</servlet-name>
+        <servlet-class>com.servlet.RemoveFromCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>remove-from-cart</servlet-name>
+        <url-pattern>/remove-from-cart</url-pattern>
+    </servlet-mapping>
+
+
 
 
 

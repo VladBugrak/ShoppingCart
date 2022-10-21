@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 10. E-Commerce Shopping Cart Increase and Decrease Cart Product Quantity in JSP and Servlet">
+    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 11. E-Commerce Shopping Cart Project Remove Product from the Shopping Cart in JSP and Servlet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/RemoveFromCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servlet/QuantityIncDecServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servlet/QuantityIncDecServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +198,9 @@
       <workItem from="1665987294531" duration="39183000" />
       <workItem from="1666081108518" duration="30476000" />
       <workItem from="1666190930720" duration="14949000" />
-      <workItem from="1666252596956" duration="28061000" />
+      <workItem from="1666252596956" duration="28740000" />
+      <workItem from="1666342049928" duration="1000000" />
+      <workItem from="1666361200340" duration="2450000" />
     </task>
     <task id="LOCAL-00001" summary="до видалення ShoppingCart_war_exploded.xml">
       <created>1666091437649</created>
@@ -262,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666294807674</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="the beginning of 11. E-Commerce Shopping Cart Project Remove Product from the Shopping Cart in JSP and Servlet">
+      <created>1666299793501</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666299793501</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +299,8 @@
     <MESSAGE value="the beginning of 8. E-Commerce Shopping Cart Show All Cart Products Inside Cart Page in JSP and Servlet" />
     <MESSAGE value="the beginning of 9. E-Commerce Shopping Cart Calculate Total Price and Item on Cart in JSP and Servlet" />
     <MESSAGE value="the beginning of 10. E-Commerce Shopping Cart Increase and Decrease Cart Product Quantity in JSP and Servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 10. E-Commerce Shopping Cart Increase and Decrease Cart Product Quantity in JSP and Servlet" />
+    <MESSAGE value="the beginning of 11. E-Commerce Shopping Cart Project Remove Product from the Shopping Cart in JSP and Servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 11. E-Commerce Shopping Cart Project Remove Product from the Shopping Cart in JSP and Servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,5 +312,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="c.getId()==Integer.parseInt(id)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
