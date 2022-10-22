@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 11. E-Commerce Shopping Cart Project Remove Product from the Shopping Cart in JSP and Servlet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/RemoveFromCart.java" afterDir="false" />
+    <list default="true" id="6fe546ce-39d1-4fcf-89ff-d9973032f62a" name="Changes" comment="the beginning of 12. E-Commerce Shopping Cart Project Buy Now Function from the Shopping cart in JSP and Servlet-1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/model/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/servlet/OrderNow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
@@ -91,7 +92,6 @@
     </configuration>
     <configuration name="Tomcat 10.0.26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.26" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ShoppingCart:war exploded">
           <settings>
@@ -200,7 +200,8 @@
       <workItem from="1666190930720" duration="14949000" />
       <workItem from="1666252596956" duration="28740000" />
       <workItem from="1666342049928" duration="1000000" />
-      <workItem from="1666361200340" duration="2450000" />
+      <workItem from="1666361200340" duration="3162000" />
+      <workItem from="1666400107815" duration="3407000" />
     </task>
     <task id="LOCAL-00001" summary="до видалення ShoppingCart_war_exploded.xml">
       <created>1666091437649</created>
@@ -272,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666299793501</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="the beginning of 12. E-Commerce Shopping Cart Project Buy Now Function from the Shopping cart in JSP and Servlet-1">
+      <created>1666364245450</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666364245450</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +308,8 @@
     <MESSAGE value="the beginning of 9. E-Commerce Shopping Cart Calculate Total Price and Item on Cart in JSP and Servlet" />
     <MESSAGE value="the beginning of 10. E-Commerce Shopping Cart Increase and Decrease Cart Product Quantity in JSP and Servlet" />
     <MESSAGE value="the beginning of 11. E-Commerce Shopping Cart Project Remove Product from the Shopping Cart in JSP and Servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 11. E-Commerce Shopping Cart Project Remove Product from the Shopping Cart in JSP and Servlet" />
+    <MESSAGE value="the beginning of 12. E-Commerce Shopping Cart Project Buy Now Function from the Shopping cart in JSP and Servlet-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="the beginning of 12. E-Commerce Shopping Cart Project Buy Now Function from the Shopping cart in JSP and Servlet-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

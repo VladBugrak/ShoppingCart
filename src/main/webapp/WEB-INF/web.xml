@@ -51,6 +51,16 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>order-now</servlet-name>
+        <servlet-class>com.servlet.OrderNow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>order-now</servlet-name>
+        <url-pattern>/order-now</url-pattern>
+    </servlet-mapping>
+
+
 
 
 
