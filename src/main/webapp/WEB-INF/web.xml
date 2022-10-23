@@ -60,6 +60,14 @@
         <url-pattern>/order-now</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>cart-check-out</servlet-name>
+        <servlet-class>com.servlet.CheckOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cart-check-out</servlet-name>
+        <url-pattern>/cart-check-out</url-pattern>
+    </servlet-mapping>
 
 
 

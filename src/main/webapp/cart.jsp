@@ -56,7 +56,7 @@
         <h3>Total Price: $ ${(total > 0)?decimalFormat.format(total):0}</h3>
 
 
-        <a class="mx-3 btn-primary" href="#"> Check OutS </a>
+        <a class="mx-3 btn-primary" href="cart-check-out"> Check Out</a>
     </div>
         <table class="table table-loght">
             <thead>
