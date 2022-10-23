@@ -4,10 +4,16 @@
 <%--<%@ page import="com.connection.DBConnection" %>--%>
 <%--<%@ page import="java.sql.SQLException" %>--%>
 <%@ page import="com.model.entity.User" %>
+<%@ page import="com.model.entity.Cart" %>
+<%@ page import="java.util.ArrayList" %>
 <%
     User auth = (User) request.getSession().getAttribute("auth");
     if(auth!=null){
         request.setAttribute("auth",auth);
+    }
+    ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
+    if(cart_list != null){
+        request.setAttribute("cart_list", cart_list);
     }
 %>
 
