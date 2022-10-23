@@ -69,6 +69,15 @@
         <url-pattern>/cart-check-out</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>cancel-order</servlet-name>
+        <servlet-class>com.servlet.CancelOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cancel-order</servlet-name>
+        <url-pattern>/cancel-order</url-pattern>
+    </servlet-mapping>
+
 
 
 
